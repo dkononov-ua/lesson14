@@ -102,29 +102,29 @@ console.log(evenFn(20)); // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
  * В реализации функции обязательно должны быть использованы операторы switch / case / default.
  */
 function weekFn(cond) {
-  let str = "";
+  let str = '';
 
   switch (cond) {
     case 1:
-      str = "Понеділок";
+      str = 'Понедельник';
       break;
     case 2:
-      str = "Вівторок";
+      str = 'Вторник';
       break;
     case 3:
-      str = "Середа";
+      str = 'Среда';
       break;
     case 4:
-      str = "Четвер";
+      str = 'Четверг';
       break;
     case 5:
-      str = "П'ятниця";
+      str = 'Пятница';
       break;
     case 6:
-      str = "Субота";
+      str = 'Суббота';
       break;
     case 7:
-      str = "Неділя";
+      str = 'Воскресенье';
       break;
     default:
       str = null;
@@ -133,17 +133,24 @@ function weekFn(cond) {
   return str;
 }
 
-console.log(weekFn(1)); // 'Понеділок'
+console.log(weekFn(1)); // 'Понедельник'
+console.log(weekFn(3)); // 'Среда'
+console.log(weekFn(7)); // 'Воскресенье'
+console.log(weekFn(9)); // null
+console.log(weekFn(1.5)); // null
+console.log(weekFn('2')); // null
 
-console.log(weekFn(3)); // 'Середа'
+console.log(weekFn(1)); // 'Понедельник'
 
-console.log(weekFn(7)); // 'Неділя'
+console.log(weekFn(3)); // 'Среда'
+
+console.log(weekFn(7)); // 'Воскресенье'
 
 console.log(weekFn(9)); // null
 
 console.log(weekFn(1.5)); // null
 
-console.log(weekFn("2")); // null
+console.log(weekFn('2')); // null
 
 /*
  * #6
